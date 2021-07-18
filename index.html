@@ -28,15 +28,15 @@
   <div class="container">
     <img src="https://cl.ly/719bff4b76ec/default_hero.jpg">
   </div>
-
+<div class="form">
   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
   <script>
     hbspt.forms.create({
   	region: "na1",
   	portalId: "20411157",
   	formId: "6d3302ec-aa03-4c47-9c35-54e286a7442d"
-    onFormSubmit: function ($form) {
-      var formFields = $form.serializeArray();
+    onFormSubmit: function (form) {
+      var formFields = form.serializeArray();
       var emailField = formFields.find(function (field) {
         return field.name === 'email'
       });
@@ -46,6 +46,8 @@
     }
   });
   </script>
+</div>
+
 
 </body>
 </html>
