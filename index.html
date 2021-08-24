@@ -35,15 +35,15 @@
   	region: "na1",
   	portalId: "20411157",
   	formId: "6d3302ec-aa03-4c47-9c35-54e286a7442d"
-    onFormSubmit: function($form) {
-      var formFields = $form.serializeArray();
-      var emailField = formFields.find(function (field) {
-        return field.name === 'email'
-      });
-      clearbit.identify(emailField.value, {
-        email: emailField.value
-      });
-    }
+    // onFormSubmit: function($form) {
+    //   var formFields = $form.serializeArray();
+    //   var emailField = formFields.find(function (field) {
+    //     return field.name === 'email'
+    //   });
+    //   clearbit.identify(emailField.value, {
+    //     email: emailField.value
+    //   });
+    // }
   });
   </script>
 </div>
