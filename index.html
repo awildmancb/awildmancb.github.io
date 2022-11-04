@@ -7,32 +7,6 @@
   </style>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script src="https://reveal.clearbit.com/v1/companies/reveal?variable=reveal&authorization=pk_ed93d8fb74d783b78e5e37e3d03d252e"></script><br>
-  <script type="text/javascript">
-  var pollForDefinition = function (scope, varname, callback) {
-    if (typeof scope[varname] !== "undefined") {
-      return callback();
-    }
-    var interval = setInterval(function () {
-      if (typeof scope[varname] !== "undefined") {
-        clearInterval(interval);
-        callback();
-      }
-    }, 250);
-  };
-  var script = document.createElement("script");
-  script.src = "https://marketo.clearbit.com/assets/v1/marketo/forms.js";
-  script.async = true;
-  script.setAttribute("data-clearbit-publishable-key", "pk_4224c060bd62f460b5996f05586f0c30");
-  script.onerror = function (e) {
-    console.log("Clearbit Form JS unable to load");
-    pollForDefinition(window, "MktoForms2", function () {
-      MktoForms2.whenReady(function (form) {
-        form.setValues({ clearbitFormStatus: "Clearbit Form JS unable to load" });
-      });
-    });
-  };
-  document.querySelector('head').appendChild(script);
-</script>
 
 </head>
 <body>
@@ -42,26 +16,13 @@
   <center>
 <div class="form">
 
-
-    <script src="//app-ab32.marketo.com/js/forms2/js/forms2.min.js"></script>
-    <form id="mktoForm_1358"></form>
-    <script>MktoForms2.loadForm("//app-ab32.marketo.com", "797-LZE-483", 1358);</script>
-  <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script> -->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
   <script>
-  //   hbspt.forms.create({
-  // 	region: "na1",
-  // 	portalId: "20411157",
-  // 	formId: "6d3302ec-aa03-4c47-9c35-54e286a7442d"
-  //   onFormSubmit: function($form) {
-  //     var formFields = $form.serializeArray();
-  //     var emailField = formFields.find(function (field) {
-  //       return field.name === 'email'
-  //     });
-  //     clearbit.identify(emailField.value, {
-  //       email: emailField.value
-  //     });
-  //   }
-  // });
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "23282462",
+      formId: "5f6c956b-e7ad-43d0-a014-a1358835324b"
+    });
   </script>
 </div>
 </center>
